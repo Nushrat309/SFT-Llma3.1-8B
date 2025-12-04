@@ -28,7 +28,7 @@ class LoRAConfig:
 @dataclass
 class TrainingConfig:
     """Training hyperparameters"""
-    max_seq_length: int = 2048
+    max_seq_length: int = 128000
     per_device_train_batch_size: int = 2
     per_device_eval_batch_size: int = 2
     gradient_accumulation_steps: int = 8
